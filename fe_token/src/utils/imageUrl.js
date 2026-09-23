@@ -1,7 +1,9 @@
 
 // src/utils/imageUrl.js
+// const BASE = process.env.REACT_APP_API_BASE_URL?.replace('/api', '')
+//              || 'http://localhost:9012';
 const BASE = process.env.REACT_APP_API_BASE_URL?.replace('/api', '')
-             || 'http://localhost:9012';
+             || 'http://201.18.192.223:3000';
 
 export const imageUrl = (path) => {
   if (!path) return null;

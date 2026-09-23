@@ -12,7 +12,9 @@ app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.use(express.json());
 
 app.use(cors({
-  origin: process.env.CLIENT_ORIGIN || 'http://localhost:3000',
+  // origin: process.env.CLIENT_ORIGIN || 'http://localhost:3000',
+  
+  origin: process.env.CLIENT_ORIGIN || 'http://201.18.192.223:3000/',
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], 
   allowedHeaders: ['Content-Type', 'Authorization']     
